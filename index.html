@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Cache-Control" content="no-transform " />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta content="telephone=no" name="format-detection" />
+<title>惊蛰</title>
+<link rel="stylesheet" href="css/common.min.css" />
+</head>
+<body>
+<ul class="cloud_bg">
+    <li class="cloud_1"></li>
+    <li class="cloud_2"></li>
+    <li class="cloud_3"></li>
+    <li class="cloud_4"></li>
+    <li class="cloud_5"></li>
+    <li class="cloud_6"></li>
+</ul>
+<div class="bar">
+  <div class="cont">
+    <a href="login.html">登录</a>
+    <a href="register.html">注册</a>
+  </div>
+</div>
+<ul class="header">
+    <li><a href="list.html">森林农场</a>
+        <div class="subnav">
+            <ul class="class_2">
+                <li>
+                    <a href="javascript:;">
+                        森林食材
+                    </a>
+                    <ul class="class_3">
+                        <li><a href="">种植</a>
+                          <ul class="class_4">
+                              <li><a href="">蔬菜</a></li>
+                              <li><a href="">蔬菜</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="">养殖</a>
+                          <ul class="class_4">
+                              <li><a href="">蔬菜</a></li>
+                              <li><a href="">蔬菜</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        森林食品
+                    </a>
+                    <ul class="class_3">
+                        <li><a href="">酵解干货</a></li>
+                        <li><a href="">传统滋补</a></li>
+                        <li><a href="">便携即食</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        森林康养
+                    </a>
+                    <ul class="class_3">
+                        <li><a href="">功能性酵素液</a></li>
+                        <li><a href="">功能性酵素粉</a></li>
+                        <li><a href="">功能性酵素片</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li><a href="list.html">森林工坊</a></li>
+    <li><a href="list.html">森林康旅</a></li>
+    <li><a href="list.html">森林智联</a></li>
+    <li><a href="index.html" class="logo"><img src="images/logo.png"/></a></li>
+    <li><a href="list.html">商城</a></li>
+    <li><a href="list.html">定制中心</a></li>
+    <li><a href="list.html">开心森林</a></li>
+    <li><a href="list.html">关于我们</a></li>
+</ul>
+
+<div class="banner">
+    <div class="cont">
+        <div class="js_index_slider">
+          <div>
+              <a href=""><img src="images/banner.png" /></a>
+          </div>
+          <div>
+              <a href=""><img src="images/banner_1.png" /></a>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="cont">
+        版权所有：厦门民安创享实业有限公司
+        <div class="right">
+            <i class="iconfont icon-customerservice"></i>
+              400-9188-800 400-7773-000
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+  //轮播
+  $('.js_index_slider').slick({
+      arrows: true,
+      dots: false,
+      autoplay:true,
+      speed:5000
+  });
+
+  $('.header>li').on('mouseenter',function(){
+      $('.header>li').removeClass('down');
+      if($(this).find('.class_2').length>0){
+          $(this).toggleClass('down');
+      }
+  }).on('mouseleave',function(){
+      $('.header>li').removeClass('down');
+  });
+</script>
+</body>
+</html>
